@@ -1,11 +1,20 @@
-# Logstash Plugin
+# LogDNA-LogStash Plugin
 
 This is a WIP/POC [LogDNA](https://logdna.com) plugin for [Logstash](https://github.com/elastic/logstash), based on a clone of [logstash-output-http v5.2.5](https://github.com/logstash-plugins/logstash-output-http/tree/v5.2.5) (the master as of 2021-09-20).
 
 It is fully free and fully open source. The license is MIT, meaning you are pretty much free to use and contribute to it however you want in whatever way.
 
+
+## LogDNA-Logstash Plugin installation
+
+- Clone repo: `git clone https://github.com/logdna/logstash-output-logdna.git`
+- Install dependencies: `bundle install`
+- Build: `gem build logstash-output-logdna.gemspec`
+- Install Logstash plugin: `sudo logstash-plugin install path/logstash-output-logdna-0.1.7.gem`
+
 ## Configuration Example.
-Note that `api_key` and `hostname` are required fields.  The rest optional.  For event data like `app`, these are the default values to use.
+Note that `api_key` and `hostname` are required fields.  The rest optional.  For event data like `app`, these are the default values to use.   
+If your data is already formatted to JSON, change the "format" from `plain/text` to `application/json`
 ```
 output{
     logdna {
@@ -21,8 +30,14 @@ output{
     }
 }
 ```
-
-## Documentation
+   
+   
+   
+   
+   
+   
+   
+## LogStash-based documentation
 
 Logstash provides infrastructure to automatically generate documentation for this plugin. We use the asciidoc format to write documentation so any comments in the source code will be first converted into asciidoc and then into html. All plugin documentation are placed under one [central location](http://www.elastic.co/guide/en/logstash/current/).
 
