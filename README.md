@@ -5,7 +5,7 @@ This is a WIP/POC [LogDNA](https://logdna.com) plugin for [Logstash](https://git
 It is fully free and fully open source. The license is MIT, meaning you are pretty much free to use and contribute to it however you want in whatever way.
 
 
-## LogDNA-Logstash Plugin installation
+## Plugin installation
 
 The following commands need to be executed on your Logstash machine.
    
@@ -46,7 +46,9 @@ output{
    
    
    
-   
+
+--------------------------------------------------------------------------------
+
 #### LogStash-based documentation
 
 Logstash provides infrastructure to automatically generate documentation for this plugin. We use the asciidoc format to write documentation so any comments in the source code will be first converted into asciidoc and then into html. All plugin documentation are placed under one [central location](http://www.elastic.co/guide/en/logstash/current/).
