@@ -15,7 +15,7 @@ git clone https://github.com/logdna/logstash-output-logdna.git
 cd logstash-output-logdna.git
 gem build logstash-output-logdna.gemspec
 ```
-Install Logstash plugin: (`path` is a placeholder which needs to be modified to your plugin path)
+Install Logstash plugin: (`path` is a placeholder which needs to be modified to your logstash plugin path)
 ```
 sudo logstash-plugin install path/logstash-output-logdna-0.1.7.gem
 ```
@@ -48,7 +48,9 @@ output{
    
 
 --------------------------------------------------------------------------------
-
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 #### LogStash-based documentation
 
 Logstash provides infrastructure to automatically generate documentation for this plugin. We use the asciidoc format to write documentation so any comments in the source code will be first converted into asciidoc and then into html. All plugin documentation are placed under one [central location](http://www.elastic.co/guide/en/logstash/current/).
