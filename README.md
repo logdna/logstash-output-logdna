@@ -5,7 +5,7 @@ This is a WIP/POC [LogDNA](https://logdna.com) plugin for [Logstash](https://git
 It is fully free and fully open source. The license is MIT, meaning you are pretty much free to use and contribute to it however you want in whatever way.
 
 ## Configuration Example.
-Note that `api_key` and `hostname` are required fields.
+Note that `api_key` and `hostname` are required fields.  The rest optional.  For event data like `app`, these are the default values to use.
 ```
 output{
     logdna {
