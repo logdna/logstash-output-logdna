@@ -7,10 +7,14 @@ It is fully free and fully open source. The license is MIT, meaning you are pret
 
 ## LogDNA-Logstash Plugin installation
 
-- Clone repo: `git clone https://github.com/logdna/logstash-output-logdna.git`
-- Install dependencies: `bundle install`
-- Build: `gem build logstash-output-logdna.gemspec`
-- Install Logstash plugin: `sudo logstash-plugin install path/logstash-output-logdna-0.1.7.gem`
+The following commands need to be executed on your Logstash machine:
+
+```
+git clone https://github.com/logdna/logstash-output-logdna.git
+cd logstash-output-logdna.git
+gem build logstash-output-logdna.gemspec
+sudo logstash-plugin install path/logstash-output-logdna-0.1.7.gem
+```
 
 ## Configuration Example.
 Note that `api_key` and `hostname` are required fields.  The rest optional.  For event data like `app`, these are the default values to use.   
