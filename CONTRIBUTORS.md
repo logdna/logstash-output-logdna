@@ -9,7 +9,8 @@ Contributors:
 * Kurt Hurtado (kurtado)
 * Pier-Hugues Pellerin (ph)
 * Richard Pijnenburg (electrical)
-* Braxton Johnston (braxtonj)
+* [Braxton Johnston (braxtonj)](https://github.com/braxtonj)
+* [Dan Flores (danf425)](https://github.com/danf425)
 
 Note: If you've sent us patches, bug reports, or otherwise contributed to
 Logstash, and you aren't on the list above and want to be, please let us know
