@@ -122,7 +122,8 @@ class LogStash::Outputs::LogDNA < LogStash::Outputs::Base
   end
 
   def genLogDNAUrl(event)
-    tmp_url = "#{@base_url}?apikey=#{@api_key}"
+    ingestion_key = event.get('[@metadata][logdna][api_key]') ? event.get('[@metadata][logdna][api_key]') : @api_key
+    tmp_url = "#{@base_url}?apikey=#{ingestion_key}"
 
     # Note that we will try and grab these from the event.
     #    if they appear as first level attributes, they will

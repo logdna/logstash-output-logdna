@@ -23,7 +23,10 @@ sudo logstash-plugin install path/logstash-output-logdna-0.1.7.gem
 
 
 ## Configuration Example.
-Note that `api_key` and `hostname` are required fields.  The rest optional.  For event data like `app`, these are the default values to use.   
+Note that `api_key` and `hostname` are required fields.  The rest optional.  For event data like `app`, these are the default values to use.
+
+In case `api_key` is <b>dynamic</b> to support for multiple customer. Add dynamic `api_key` to `[@metadata][logdna][api_key]`. Check `test.logstash-output-logdna.conf` for more information.
+
 If your data is already formatted to JSON, change the "format" from `plain/text` to `application/json`
 ```
 output{
