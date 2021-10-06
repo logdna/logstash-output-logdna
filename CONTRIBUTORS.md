@@ -11,6 +11,7 @@ Contributors:
 * Richard Pijnenburg (electrical)
 * [Braxton Johnston (braxtonj)](https://github.com/braxtonj)
 * [Dan Flores (danf425)](https://github.com/danf425)
+* [Sujith Surendran (sujith-es)](https://github.com/sujith-es) | [Armor](https://github.com/armor)
 
 Note: If you've sent us patches, bug reports, or otherwise contributed to
 Logstash, and you aren't on the list above and want to be, please let us know
