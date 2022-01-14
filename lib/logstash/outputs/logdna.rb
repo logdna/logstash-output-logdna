@@ -19,7 +19,8 @@ class LogStash::Outputs::LogDNA < LogStash::Outputs::Base
     ::Manticore::SocketException,
     ::Manticore::ClientProtocolException,
     ::Manticore::ResolutionFailure,
-    ::Manticore::SocketTimeout
+    ::Manticore::SocketTimeout,
+    ::Manticore::UnknownException
   ]
 
   # This output lets you send events to LogDNA via it's Ingest API
